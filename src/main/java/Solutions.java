@@ -4,7 +4,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Solutions {
     public static void main(String[] args) {
-        System.setProperty("webdriver.chrome.driver",  "C:\\Users\\Yelena\\Downloads\\chromedriver_win32\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver",  "C:\\Users\\Yelena\\Downloads\\chromedriver_win32");
         driver = new ChromeDriver();
 
         System.setProperty("webdriver.firefox.driver","C:\\Users\\Yelena\\Downloads\\selenium_ide-3.17.0-fx" );
