@@ -1,10 +1,12 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Solutions {
     public static void main(String[] args) {
-
+        private static WebDriver driver;
+        private static WebDriver driver2;
         //#1
         System.setProperty("webdriver.chrome.driver",  "C:\\Users\\Yelena\\Downloads\\chromedriver_win32");
         driver = new ChromeDriver();
@@ -12,7 +14,7 @@ public class Solutions {
         //#2
         driver.get("https://translate.google.com/");
         System.out.println(driver.findElement(By.className("er8xn")).sendKeys("אבא"));
-        System.out.println(driver.findElement(By.cssSelector(<textarea>[aria-label=<"Source text">])));
+        System.out.println(driver.findElement(By.cssSelector(<"textarea">["aria-label"=<"Source text">])));
 
         System.setProperty("webdriver.firefox.driver","C:\\Users\\Yelena\\Downloads\\selenium_ide-3.17.0-fx" );
         driver2 = new FireFoxDriver();
