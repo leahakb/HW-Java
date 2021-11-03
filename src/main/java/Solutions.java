@@ -1,8 +1,8 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Solutions {
     private static WebDriver driver;
@@ -28,7 +28,7 @@ public class Solutions {
         System.out.println(driver2.findElement(By.id("search-icon-legacy")));
         //#7
         driver.get("https://www.youtube.com/");
-        driver.findElement(By.id("search")).sendKeys("Once in a million");
+        driver.findElement(By.name("search_query")).sendKeys("Once in a million");
         driver.findElement(By.id("search-icon-legacy")).click();
 
         //#4
